@@ -112,10 +112,18 @@ node -v 12.5.0
 
 svg 图标的获取途径之一：使用 fontawesome react ；图标库插件：react-fontawesome
 安装方式：（其中 react-fontawesome 这是跟图标的组件）
+    网站：https://fontawesome.com/how-to-use/on-the-web/using-with/react
     yarn add @fortawesome/react-fontawesome
     yarn add @fortawesome/free-solid-svg-icons
     yarn add @fortawesome/fontawesome-svg-core
+    <!-- 公司 logo 图标 -->
+    yarn add @fortawesome/free-brands-svg-icons
 使用：
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
     import { faSearch } from '@fortawesome/free-solid-svg-icons'
+```
+```
+安装 PropTypes：类型定义插件，类似typeScript
+    yarn add PropTypes
+
 ```

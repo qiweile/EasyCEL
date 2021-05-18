@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import PropTypes from 'prop-types'
 const FileSearch = ({ title, onFileSearch }) => {
     const [inputActive, setInputActive] = useState(false)
     const [value, setValue] = useState('')
@@ -50,5 +51,13 @@ const FileSearch = ({ title, onFileSearch }) => {
             }
         </div>
     )
+}
+FileSearch.propTypes = {
+    title: PropTypes.string,
+    // isRequired 表示必传项
+    onFileSearch: PropTypes.func.isRequired
+}
+FileSearch.defaultProps = {
+    title: 'my BOM'
 }
 export default FileSearch
